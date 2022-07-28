@@ -2,6 +2,7 @@
 Tools and resources created by the Hummingbot community.
 
 ## List
+- Manage Bot Cycles - This directory contains the sample folder structure to organize bot configurations and scripts to run all your bots at once
 
 ## Contributing
 
