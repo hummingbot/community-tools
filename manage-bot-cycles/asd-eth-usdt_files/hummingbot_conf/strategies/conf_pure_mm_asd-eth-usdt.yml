@@ -2,14 +2,14 @@
 ###       Pure market making strategy config         ###
 ########################################################
 
-template_version: 21
+template_version: 24
 strategy: pure_market_making
 
 # Exchange and token parameters.
-exchange: binance
+exchange: ascend_ex
 
 # Token trading pair for the exchange, e.g. BTC-USDT
-market: BNB-BUSD
+market: ETH-USDT
 
 # How far away from mid price to place the bid order.
 # Spread of 1 = 1% away from mid price at that time.
@@ -47,6 +47,18 @@ price_ceiling: -1.0
 # Price band floor.
 price_floor: -1.0
 
+# enable moving price floor and ceiling.
+moving_price_band_enabled: false
+
+# Price band ceiling pct.
+price_ceiling_pct: 1.0
+
+# Price band floor pct.
+price_floor_pct: -1.0
+
+# price_band_refresh_time.
+price_band_refresh_time: 86400.0
+
 # Whether to alternate between buys and sells (true/false).
 ping_pong_enabled: false
 
@@ -71,8 +83,6 @@ order_level_amount: 0.0
 
 # Order price space between orders (if order_levels > 1).
 order_level_spread: 1.0
-buy_level_spread: 1.0
-sell_level_spread: 1.0
 
 # How long to wait before placing the next order in case your order gets filled.
 filled_order_delay: 60.0
@@ -126,6 +136,15 @@ take_if_crossed:
 #   order_3: [sell, 0.1, 500]
 # Please make sure there is a space between : and [
 order_override:
+
+# Simpler override config for seperate bid and order level spreads
+split_order_levels_enabled: false
+bid_order_level_spreads:
+ask_order_level_spreads:
+bid_order_level_amounts:
+ask_order_level_amounts:
+# If the strategy should wait to receive cancellations confirmation before creating new orders during refresh time
+should_wait_order_cancel_confirmation: true
 
 # For more detailed information, see:
 # https://docs.hummingbot.io/strategies/pure-market-making/#configuration-parameters

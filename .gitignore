@@ -1,0 +1,4 @@
+*.log
+*.sqlite
+.password_verification
+hummingbot_logs
