@@ -98,6 +98,19 @@ The script will do the following steps:
 - For each bot in the list, the script create new bot instance and run it, the bot instance will automatically start without any intervention
 - There is a slight delay of 30 seconds between bot creation, this is for avoiding getting socket ban from the exchange
 
+# Usage Check List
+Please use this check list to make sure the script run properly:
+
+- [ ] Using `development` or bot version higher than 1.7.0
+- [ ] Setup your bot configurations using the format in `How To Use This`
+- [ ] Make sure that `.password_verification` is existing and valid
+- [ ] Make sure connector files are there
+- [ ] Make sure your naming convention for bot config folders is correct
+- [ ] Make sure you have set environment variables in init_and_run_bots.sh, line 48 -> 50, (`STRATEGY`, `CONFIG_FILE_NAME`, and `CONFIG_PASSWORD`)
+- [ ] Make sure you have rebalanced your bot budget
+- [ ] Make sure you have tested your bot strategy carefully
+- [ ] Run `init_and_run_bots.sh` to launch your bots
+- [ ] Verify that all your bots have launched successfully
 
 # Utility Scripts
 - `remove_bots.sh` stop and remove all bot instances, this will not cancel your trade orders
@@ -106,3 +119,4 @@ The script will do the following steps:
 
 # Change Logs
 - `17 August 2022`: Reworked the folder sturcture, updated `init_and_run_bots.sh` to support dev-1.7.0 version.
+- `5 October 2022`: Edited README.md, added Usage Check List
