@@ -77,13 +77,16 @@ bin-bnb-busd
 ```
 This means only 2 bots (`ETH/USDT` and `BNB/BUSD`) will be launched.
 
-After specifying bots in `bots_to_run` file, please set the following environment variables in `init_and_run_bots.sh`, line 48 -> 50:
+After specifying bots in `bots_to_run` file, please set the following environment variables in `init_and_run_bots.sh`, line 48 -> 50, these configurations are required:
 
 ```bash
   export STRATEGY="pure_market_making" # Name of the strategy to auto run
   export CONFIG_FILE_NAME="conf_pure_mm_$1.yml" # Name of the config file to auto run, $1 is template for the name of the bots in bots_to_run file
   export CONFIG_PASSWORD='password' # Password to access your bot, it is for the login prompt when you first start the bot
 ```
+
+***ATTENTION:
+Please make sure that `CONFIG_PASSWORD` is set to your bot access password, without it the script will not be able to launch your bots properly and you will get `"invalid password"` error when trying to access the bot.***
 
  Then you can run `init_and_run_bots.sh` script to launch your bots:
 ```
