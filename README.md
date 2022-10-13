@@ -2,10 +2,12 @@
 Tools and resources created by the Hummingbot community.
 
 ## List
-### Hummingbot-Postprocess
 
-### Manage Bot Cycles
-This directory contains the sample folder structure to organize bot configurations and scripts to run all your bots at once
+[### Hummingbot Postprocess](https://github.com/hummingbot/community-tools/tree/main/Hummingbot-Postprocess)
+Scripts to visualise and analyse performance of Hummingbot trade logs
+
+[### Manage Bot Cycles](https://github.com/hummingbot/community-tools/tree/main/manage-bot-cycles)
+Folder structure that helps you organize multiple bot configurations and scripts to run and manage all your bots
 
 ## Contributing
 
