@@ -3,6 +3,11 @@ Script to visualise and analyse performance of high-frequency crypto trading bot
  
 <br />
 
+Installation and use of the script:
+- Download script (hummingbot-postprocess.py) from Github to the system where hummingbot crypto trading bots are being used
+- Open the script in any text editor and modify the input parameters listed below
+- Run the script (python hummingbot-postprocess.py) and obtain the output plot and statistics    
+
 
 | Inputs to be provided        | Sample inputs  |
 | ------------- |------------- | 
