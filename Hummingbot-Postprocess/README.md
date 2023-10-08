@@ -1,5 +1,5 @@
 Script to visualise and analyse performance of high-frequency crypto trading bots using Hummingbot
-(https://github.com/CoinAlpha/hummingbot)
+(https://github.com/hummingbot/hummingbot)
  
 <br />
 
